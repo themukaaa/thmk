@@ -1,2 +1,0 @@
-# thmk
-my silly web!!!
