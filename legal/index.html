@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Legal and Privacy - Themukaaa</title>
+  <meta name="description" content="Privacy, cookies, copyright and terms of use for themukaaa.com. This site uses no cookies and no analytics tracking." />
+  <meta name="author" content="themukaaa" />
+  <link rel="canonical" href="https://themukaaa.com/legal/" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Themukaaa" />
+  <meta property="og:title" content="Legal and Privacy - Themukaaa" />
+  <meta property="og:description" content="Privacy, cookies, copyright and terms of use for themukaaa.com." />
+  <meta property="og:url" content="https://themukaaa.com/legal/" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Legal and Privacy - Themukaaa" />
+  <meta name="twitter:description" content="Privacy, cookies, copyright and terms of use for themukaaa.com." />
+
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <canvas id="bgCanvas" aria-hidden="true"></canvas>
+
+  <header class="site-header">
+    <a class="nav-name" href="/">Themuka&#8482;</a>
+    <span class="nav-est">Est &middot; 2026</span>
+  </header>
+
+  <main id="main" class="page-main">
+
+    <section class="legal-hero" aria-labelledby="legal-heading">
+      <h1 id="legal-heading" class="legal-title">
+        <span class="legal-word-legal">Legal </span><span class="legal-word-and">&amp; </span><span class="legal-word-privacy">Privacy</span>
+      </h1>
+
+      <button class="dim-toggle" type="button" id="dimToggle" aria-pressed="false">
+        <span class="dim-toggle-text">Dim the background</span>
+      </button>
+    </section>
+
+    <section class="section legal-section" aria-labelledby="legal-content-heading">
+      <h2 id="legal-content-heading" class="visually-hidden">Legal information</h2>
+
+      <div class="legal-panel">
+        <article class="legal-block">
+          <h3 class="legal-block-title">1. Privacy &amp; Cookies</h3>
+          <p>I believe in a clean, respectful, and private web experience. This website uses no cookies and no analytics tracking. When you visit, you remain completely anonymous. I do not store your data, track your behavior, or use third-party scripts. Your privacy is a priority, not a feature.</p>
+        </article>
+
+        <article class="legal-block">
+          <h3 class="legal-block-title">2. Copyright &amp; Intellectual Property</h3>
+          <p>Everything you see here, the stickers, shapes, drawings, and designs, was created by me. These original works are protected by international copyright laws. While you are welcome to explore and enjoy this space, please do not copy, redistribute, or use my original artwork for your own projects without my written permission.</p>
+        </article>
+
+        <article class="legal-block">
+          <h3 class="legal-block-title">3. External Links</h3>
+          <p>My portfolio contains links to my other projects (like Stargurls, Jullow, Rascal Festival, and Worltra Maps) and social media platforms. Once you click these links, you are leaving my website. I am not responsible for the content, privacy practices, or downtime of those external sites. Please view their respective policies if you have concerns.</p>
+        </article>
+
+        <article class="legal-block">
+          <h3 class="legal-block-title">4. Contact &amp; Updates</h3>
+          <p>If you have questions about my work or these terms, you can reach me via the contact link provided on the homepage. I may update these terms occasionally to reflect how this "mini-world" grows, and by continuing to use the site, you agree to these terms.</p>
+        </article>
+
+        <p class="legal-updated">Last updated: June 2026</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-col">
+      <h2>Themukaaa&#8482;</h2>
+      <a href="/legal/">Legal</a>
+    </div>
+
+    <div class="footer-col">
+      <h2>Social</h2>
+      <a href="https://www.linkedin.com/in/themukaaa" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://github.com/themukaaa" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </div>
+
+    <div class="footer-col">
+      <h2>Contact Me</h2>
+      <a href="mailto:hello@themukaaa.com">Email</a>
+    </div>
+
+    <p class="footer-copy">&copy; 2026 Themukaaa. All rights reserved.</p>
+  </footer>
+
+  <script src="/js/script.js"></script>
+  <script>
+    (function () {
+      'use strict';
+
+      var toggle = document.getElementById('dimToggle');
+      var label = toggle ? toggle.querySelector('.dim-toggle-text') : null;
+      if (!toggle || !label) return;
+
+      toggle.addEventListener('click', function () {
+        var dimmed = document.body.classList.toggle('is-dimmed');
+        toggle.setAttribute('aria-pressed', dimmed ? 'true' : 'false');
+        label.textContent = dimmed ? 'Brighten the background' : 'Dim the background';
+      });
+    })();
+  </script>
+</body>
+</html>

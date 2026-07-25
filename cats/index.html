@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>World of Cats - Themukaaa</title>
+  <meta name="description" content="Seven hand drawn cats with a fun fact each, plus two cat protection organisations worth knowing about." />
+  <meta name="author" content="themukaaa" />
+  <link rel="canonical" href="https://themukaaa.com/cats/" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Themukaaa" />
+  <meta property="og:title" content="World of Cats - Themukaaa" />
+  <meta property="og:description" content="Seven hand drawn cats with a fun fact each, plus two cat protection organisations worth knowing about." />
+  <meta property="og:url" content="https://themukaaa.com/cats/" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="World of Cats - Themukaaa" />
+  <meta name="twitter:description" content="Seven hand drawn cats with a fun fact each." />
+
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <canvas id="bgCanvas" aria-hidden="true"></canvas>
+
+  <header class="site-header">
+    <a class="nav-name" href="/">Themuka&#8482;</a>
+    <span class="nav-est">Est &middot; 2026</span>
+  </header>
+
+  <main id="main" class="page-main">
+
+    <section class="cats-hero" aria-labelledby="cats-heading">
+      <h1 id="cats-heading" class="cats-title">
+        <span class="cats-word-world">World </span><span class="cats-word-of">of </span><span class="cats-word-cats">Cats</span>
+      </h1>
+      <p class="cats-intro">Did you know? Cats are the actual owners of humans and the entire planet Earth. Did you know? No? Well... now you know! Xaxaxa.</p>
+      <p class="cats-tap-hint">(Tap a cat to hear what they have to say)</p>
+    </section>
+
+    <section class="cats-field-section" aria-labelledby="cats-field-heading">
+      <h2 id="cats-field-heading" class="visually-hidden">Meet the cats</h2>
+
+      <div class="cats-field">
+        <div class="cat-item" style="top:2%;left:8%">
+          <button class="cat-button" type="button" aria-expanded="false" aria-controls="fact-1">
+            <img class="cat-img" src="/assets/stickers/cat-1.png" alt="An orange cat standing" />
+            <span class="visually-hidden">Show fun fact</span>
+          </button>
+          <p class="cat-bubble" id="fact-1">Did you know that all orange cats are crazy? Xaxax</p>
+        </div>
+
+        <div class="cat-item" style="top:8%;right:6%">
+          <button class="cat-button" type="button" aria-expanded="false" aria-controls="fact-2">
+            <img class="cat-img" src="/assets/stickers/cat-2.png" alt="A dark grey cat sitting" />
+            <span class="visually-hidden">Show fun fact</span>
+          </button>
+          <p class="cat-bubble" id="fact-2">If I look at you and slowly blink, I'm basically saying "I love you" and "I trust you." It's the highest compliment a cat can give!</p>
+        </div>
+
+        <div class="cat-item" style="top:26%;left:30%">
+          <button class="cat-button" type="button" aria-expanded="false" aria-controls="fact-3">
+            <img class="cat-img" src="/assets/stickers/cat-3.png" alt="A yellow cat standing upright" />
+            <span class="visually-hidden">Show fun fact</span>
+          </button>
+          <p class="cat-bubble" id="fact-3">Did you know my whiskers are as wide as my body? They help me calculate if I can fit through that tiny hole (spoiler I usually can.)</p>
+        </div>
+
+        <div class="cat-item" style="top:24%;right:3%">
+          <button class="cat-button" type="button" aria-expanded="false" aria-controls="fact-4">
+            <img class="cat-img" src="/assets/stickers/cat-4.png" alt="An orange cat with its tail up" />
+            <span class="visually-hidden">Show fun fact</span>
+          </button>
+          <p class="cat-bubble" id="fact-4">Physics has nothing on me.</p>
+        </div>
+
+        <div class="cat-item" style="top:48%;left:5%">
+          <button class="cat-button" type="button" aria-expanded="false" aria-controls="fact-5">
+            <img class="cat-img" src="/assets/stickers/cat-5.png" alt="A dark grey cat lying down" />
+            <span class="visually-hidden">Show fun fact</span>
+          </button>
+          <p class="cat-bubble" id="fact-5">When my whiskers twitch in my sleep, I'm probably dreaming about catching a giant laser pointer. Don't wake me up, I'm winning!</p>
+        </div>
+
+        <div class="cat-item" style="top:50%;right:8%">
+          <button class="cat-button" type="button" aria-expanded="false" aria-controls="fact-6">
+            <img class="cat-img" src="/assets/stickers/cat-6.png" alt="A yellow cat stretched out on its back" />
+            <span class="visually-hidden">Show fun fact</span>
+          </button>
+          <p class="cat-bubble" id="fact-6">Did you know I have legendary hearing? I can hear you opening a treat bag from three rooms away, but when you call my name... I'm just choosing to ignore you. Xaxaxa.</p>
+        </div>
+
+        <div class="cat-item" style="top:70%;left:32%">
+          <button class="cat-button" type="button" aria-expanded="false" aria-controls="fact-7">
+            <img class="cat-img" src="/assets/stickers/cat-7.png" alt="A dark grey cat curled up" />
+            <span class="visually-hidden">Show fun fact</span>
+          </button>
+          <p class="cat-bubble" id="fact-7">Just like your fingerprints, my nose print is 100% unique. No other cat in the world has a nose pattern like mine.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-centered charity-section" aria-labelledby="charity-heading">
+      <h2 id="charity-heading" class="charity-heading">Where Cats Come First</h2>
+      <p class="charity-intro">These are two cat protection organisations out of many - just a couple I personally admire for the work they do.</p>
+
+      <ul class="charity-grid">
+        <li>
+          <a class="charity-card" href="https://www.ninelivesgreece.com/" target="_blank" rel="noopener noreferrer">
+            <img class="charity-logo" src="/assets/photos/nlg.svg" alt="Nine Lives Greece logo" />
+            <span class="charity-name">Nine Lives Greece</span>
+            <span class="visually-hidden">Opens in a new tab</span>
+          </a>
+        </li>
+        <li>
+          <a class="charity-card" href="https://www.cats.org.uk/" target="_blank" rel="noopener noreferrer">
+            <img class="charity-logo" src="/assets/photos/cpuk.svg" alt="Cats Protection UK logo" />
+            <span class="charity-name">Cats Protection (UK)</span>
+            <span class="visually-hidden">Opens in a new tab</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-col">
+      <h2>Themukaaa&#8482;</h2>
+      <a href="/legal/">Legal</a>
+    </div>
+
+    <div class="footer-col">
+      <h2>Social</h2>
+      <a href="https://www.linkedin.com/in/themukaaa" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://github.com/themukaaa" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </div>
+
+    <div class="footer-col">
+      <h2>Contact Me</h2>
+      <a href="mailto:hello@themukaaa.com">Email</a>
+    </div>
+
+    <p class="footer-copy">&copy; 2026 Themukaaa. All rights reserved.</p>
+  </footer>
+
+  <script src="/js/script.js"></script>
+  <script>
+    (function () {
+      'use strict';
+
+      var items = Array.prototype.slice.call(document.querySelectorAll('.cat-item'));
+      if (!items.length) return;
+
+      function closeAll() {
+        items.forEach(function (item) {
+          item.classList.remove('is-open');
+          item.querySelector('.cat-button').setAttribute('aria-expanded', 'false');
+        });
+      }
+
+      function positionBubbles() {
+        var screenWidth = window.innerWidth;
+        items.forEach(function (item) {
+          item.classList.remove('edge-left', 'edge-right');
+          var rect = item.getBoundingClientRect();
+          var centerX = rect.left + rect.width / 2;
+          if (centerX < 140) {
+            item.classList.add('edge-left');
+          } else if (centerX > screenWidth - 140) {
+            item.classList.add('edge-right');
+          }
+        });
+      }
+
+      items.forEach(function (item) {
+        var button = item.querySelector('.cat-button');
+
+        button.addEventListener('click', function (event) {
+          event.stopPropagation();
+          var wasOpen = item.classList.contains('is-open');
+          closeAll();
+          if (!wasOpen) {
+            item.classList.add('is-open');
+            button.setAttribute('aria-expanded', 'true');
+          }
+        });
+      });
+
+      document.addEventListener('click', closeAll);
+
+      document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape') closeAll();
+      });
+
+      positionBubbles();
+      window.addEventListener('resize', positionBubbles);
+    })();
+  </script>
+</body>
+</html>

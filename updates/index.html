@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>News and Updates - Themukaaa</title>
+  <meta name="description" content="Whatever I am working on right now, posted as a one way chat. Mostly me talking to myself." />
+  <meta name="author" content="themukaaa" />
+  <link rel="canonical" href="https://themukaaa.com/updates/" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Themukaaa" />
+  <meta property="og:title" content="News and Updates - Themukaaa" />
+  <meta property="og:description" content="Whatever I am working on right now, posted as a one way chat." />
+  <meta property="og:url" content="https://themukaaa.com/updates/" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="News and Updates - Themukaaa" />
+  <meta name="twitter:description" content="Whatever I am working on right now." />
+
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body class="updates-body">
+  <a class="skip-link" href="#chat-scroll">Skip to updates</a>
+
+  <header class="site-header">
+    <a class="nav-name" href="/">Themuka&#8482;</a>
+    <span class="nav-est">Est &middot; 2026</span>
+  </header>
+
+  <div class="updates-top">
+    <img src="/assets/stickers/shape-star-1.png" class="deco-top" style="top:14%;left:8%;width:64px;animation-delay:0s;animation-duration:7s" alt="" />
+    <img src="/assets/stickers/shape-star-2.png" class="deco-top" style="top:12%;right:10%;width:54px;animation-delay:1.2s;animation-duration:9s" alt="" />
+    <img src="/assets/stickers/shape-2.png" class="deco-top" style="top:16%;right:26%;width:44px;animation-delay:0.6s;animation-duration:8s" alt="" />
+    <img src="/assets/stickers/shape-star-3.png" class="deco-top" style="top:58%;left:9%;width:50px;animation-delay:2s;animation-duration:11s" alt="" />
+    <img src="/assets/stickers/shape-4.png" class="deco-top" style="top:60%;right:8%;width:52px;animation-delay:1.5s;animation-duration:10s" alt="" />
+
+    <img class="updates-logo" src="/assets/logos/thmk-logo.png" width="70" height="70" alt="THMK monogram logo" />
+
+    <h1 class="updates-title">
+      <span class="updates-word-news">News </span><span class="updates-word-and">&amp; </span><span class="updates-word-updates">Updates</span>
+    </h1>
+
+    <p class="updates-intro">Mostly me talking to myself xaxa</p>
+  </div>
+
+  <main id="main" class="updates-panel" aria-label="Updates">
+    <canvas id="bgCanvas" aria-hidden="true"></canvas>
+
+    <div class="chat-scroll" id="chat-scroll" tabindex="0" aria-label="Updates, newest first">
+      <h2 class="visually-hidden">All updates, newest first</h2>
+
+      <ol class="chat-log">
+
+        <li class="chat-day">
+          <p class="chat-date"><time datetime="2026-07-24">24 &middot; 07 &middot; 2026</time></p>
+          <ul class="chat-messages">
+            <li class="msg">
+              <img class="msg-avatar" src="/assets/photos/photo-1.jpg" alt="" />
+              <div class="msg-bubble">
+                <p>Hello world xaxa</p>
+
+              </div>
+            </li>
+          </ul>
+        </li>
+
+      </ol>
+    </div>
+
+  <script src="/js/script.js"></script>
+  <script>
+    (function () {
+      'use strict';
+      var scroller = document.getElementById('chat-scroll');
+      var jump = document.getElementById('chatJump');
+      if (!scroller || !jump) return;
+
+      jump.addEventListener('click', function () {
+        scroller.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    })();
+  </script>
+</body>
+</html>
